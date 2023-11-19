@@ -7,8 +7,14 @@ body {
 }
 
 .tecnologias {
-    margin-left: 20%;
     justify-content: center;  
+}
+
+@media (min-width: 576px) {
+    /* Aplique a margem apenas em telas maiores que 576 pixels de largura (como tablets e desktops) */
+    .tecnologias {
+        margin-left: 20%;
+    }
 }
 
 footer {
@@ -18,11 +24,10 @@ footer {
     position: flex;
     bottom: 0;
     width: 100%;
-
 }
 
 .custom-hr {
     border-top: 2px solid #007bff;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
+}
