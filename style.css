@@ -1,0 +1,28 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.tecnologias {
+    margin-left: 20%;
+    justify-content: center;  
+}
+
+footer {
+    background-color: #cccccc;
+    padding: 20px;
+    text-align: center;
+    position: flex;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.custom-hr {
+    border-top: 2px solid #007bff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
