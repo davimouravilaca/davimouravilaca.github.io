@@ -41,6 +41,14 @@ h2::before {
     margin-top: -55px; /* Negativo da altura da sua navbar */
     visibility: hidden;
   }
+
+h1::before {
+    content: '';
+    display: block;
+    height: 55px; /* Altura da sua navbar */
+    margin-top: -55px; /* Negativo da altura da sua navbar */
+    visibility: hidden;
+  }
   
   /* Ajuste o seletor para os IDs das suas seções */
   #home::before,
