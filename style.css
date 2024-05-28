@@ -42,7 +42,7 @@ h2::before {
     visibility: hidden;
   }
 
-h1::before {
+#home::before {
     content: '';
     display: block;
     height: 80px; /* Altura da sua navbar */
