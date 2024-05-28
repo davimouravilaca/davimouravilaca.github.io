@@ -4,6 +4,7 @@
 
 body {
     background-color: lightgray;
+    padding-top: 60px;
 }
 
 .tecnologias {
@@ -31,3 +32,21 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/* Adicione esta regra CSS para cada seção que será alvo da navegação */
+h2,h1::before {
+    content: '';
+    display: block;
+    height: 55px; /* Altura da sua navbar */
+    margin-top: -55px; /* Negativo da altura da sua navbar */
+    visibility: hidden;
+  }
+  
+  /* Ajuste o seletor para os IDs das suas seções */
+  #home::before,
+  #tecnologias::before,
+  #projetos::before,
+  #contato::before {
+    /* As regras acima serão aplicadas aqui */
+  }
+  
