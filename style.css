@@ -34,7 +34,7 @@ footer {
 }
 
 /* Adicione esta regra CSS para cada seção que será alvo da navegação */
-h2,h1::before {
+h2::before {
     content: '';
     display: block;
     height: 55px; /* Altura da sua navbar */
