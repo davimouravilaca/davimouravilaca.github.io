@@ -18,6 +18,24 @@
     <title>Davi Vilaça Dev</title>
     
     <meta name="google-site-verification" content="RfhRhfb0B4-gpaOmrOlYV7_T1aMU-TdZ89YuVH2vikc" />
+
+    <style>
+        /* Adicione estilos personalizados aqui */
+        .dropdown-menu {
+          background-color: #f8f9fa; /* Cor de fundo do menu suspenso */
+          border: none; /* Remover a borda padrão */
+          border-radius: 0; /* Remover o arredondamento das bordas */
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adicionar uma sombra */
+        }
+    
+        .dropdown-item {
+          color: #333; /* Cor do texto dos itens do menu */
+        }
+    
+        .dropdown-item:hover {
+          background-color: #e9ecef; /* Cor de fundo quando hover */
+        }
+      </style>
 </head>
 <body>
 
@@ -38,8 +56,8 @@
                 <a class="nav-link" href="#tecnologias">Tecnologias</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projetos">Projetos</a>
-              </li>
+              <a class="nav-link" href="#tecnologias">Projetos</a>
+              </li>      
               <li class="nav-item">
                 <a class="nav-link" href="#contato">Contato</a>
               </li>
@@ -114,22 +132,71 @@
         <br>
 
         <div>
-            <a href="https://github.com/davimouravilaca/horrorcraft">
+            <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <img src="horrorcraft.png" alt="logotipo com desenho do ctuhlu" style="max-width: 75%;">
             </a>
-            <p class="lead shadow border border-3" style="text-align:center; max-width:75%; margin:auto;">
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-1" id="exampleModalLabel">Em desenvolvimento</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="h1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="h2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="h3.png" class="d-block w-100" alt="...">
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p class="mb-0 mt-3">Acompanhar desenvolvimento através das plataformas:</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <a href="https://www.facebook.com/horrorcraftwebsite" type="button" class="btn btn-primary">Facebook <img src="facebook.svg" style="max-width: 20px; height: auto;" alt=""></a>
+                <a href="https://github.com/davimouravilaca/horrorcraft" type="button" class="btn btn-secondary">Github <img src="github.png" style="max-width: 20px; height: auto;" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+  
+
+            <h2 class="lead shadow border border-3" style="text-align:center; max-width:75%; margin:auto;">
                 Rede-social/forúm para compartilhamento de contos de terror sendo desenvolvido em PHP puro e banco de dados MySQL.
-            </p>            
+            </h2>            
         </div>  
 
 
-<!--
+
       <div>
-            <a href="https://github.com/davimouravilaca/password-generator">
+            <a href="password-generator/">
 
 <br>
 <div>
-                <img src="https://i.ibb.co/Xp9GRmr/Inserir-um-t-tulo-20240527-115654-0000.png" alt="logotipo com desenho de cadeado" style="max-width: 75%;">
+                <img src="Password Generator.png" alt="logotipo com desenho de cadeado" style="max-width: 75%;">
             </a>
             <p class="lead shadow border border-3" style="text-align:center; max-width:75%; margin:auto;">
                 Gerador de senhas responsivo feito inteiramente em Bootstrap com PHP puro usando chamadas AJAX para interação cliente-servidor.
@@ -137,6 +204,8 @@
         </div>     
 
 <br>
+
+<!--
 
 <div>
 
@@ -177,7 +246,7 @@
 </div>
     
 <footer class="text-center mt-5">
-    <p>&copy; 2023 Davi Vilaça Dev. Todos os direitos reservados.</p>
+    <p>&copy; <?=date("Y")?> Davi Vilaça Dev. Todos os direitos reservados.</p>
 </footer>
 
 

@@ -54,7 +54,10 @@ h2::before {
   #home::before,
   #tecnologias::before,
   #projetos::before,
-  #contato::before {
+  #contato::before
+  #horrorcraft::before,
+  #password-generatir::before
+  {
     /* As regras acima serão aplicadas aqui */
   }
   
